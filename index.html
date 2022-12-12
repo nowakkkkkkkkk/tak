@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Kolekcje</title>
+</head>
+<body>
+
+CHECK1 <input type="checkbox" name="a1" class="check"><br>
+CHECK2 <input type="checkbox" name="a2" class="check"><br>
+CHECK3 <input type="checkbox" name="a3" class="check"><br>
+CHECK4 <input type="checkbox" name="a4" class="check"><br>
+CHECK5 <input type="checkbox" name="a5" class="check"><br>
+CHECK6 <input type="checkbox" name="a6" class="check"><br>
+<input type="button" value="Zaznacz" onclick="zaznacz()">
+
+
+<script type="text/javascript">
+	function zaznacz()
+	{
+	var kolekcja = document.querySelectorAll(".check")
+for (var el of kolekcja)
+{
+	console.log(el);
+	el.checked=true;
+}
+}
+</script>
+</body>
+</html>
